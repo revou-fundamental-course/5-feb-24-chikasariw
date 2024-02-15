@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+</head>
+
+<body>
+    <header>
+        <p>A simple web Celsius and Fahrenheit temperature conversion. <br> This website was developed during practical coding exercises as a mini project of the Basic Software Engineering Course at revoU.</p>
+    </header>
+    <hr>
+    <main>
+        <section class="display-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="temperatureForm">
+                            <p class="muted mb-3">*enter a value in either Celsius or Fahrenheit field.</p>
+                            <div class="input-container mb-3" id="celciusGroup">
+                                <div class="input-group">
+                                    <label for="celcius">(C°) Celsius:</label>
+                                    <input type="text" name="celcius" id="celciusInput" placeholder="Celcius">
+                                </div>
+                            </div>
+                            <div class="flex mb-3">
+                                <button id="reverseButton" class="btn-reverse"><i class="fa fa-reply-all" aria-hidden="true"></i>Reverse</button>
+                                <button id="resetButton" class="btn-reset"><i class="fa fa-refresh" aria-hidden="true"></i>Reset</button>
+                            </div>
+                            <button id="convertButton" class="mb-3 btn-convert">Convert</button>
+                            <div class="input-container mb-3" id="farenheitGroup">
+                                <div class="input-group">
+                                    <label for="farenheit">(F°) Fahrenheit:</label>
+                                    <input type="text" name="farenheit" id="farenheitInput" placeholder="Fahrenheit">
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="kalkulasi">Calculation:</label>
+                                <textarea name="kalkulasi" id="kalkulasi" cols="30" rows="1" disabled></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-formula">
+                            <h3 class="mb-3">Calculation Formula:</h3>
+                            <p id="rumusCelcius" style="display: none;" class="mb-3">
+                                Celsius to Fahrenheit: <strong>°C = (9/5 x °C) + 32</strong>
+                            </p>
+                            <p id="rumusFarenheit" style="display: none;" class="mb-3">
+                                Fahrenheit to Celsius: <strong>°F = 5/9 x (°F - 32)</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>2024&copy; Made by <a href="https://github.com/chikasariw" target="_blank">Chika Sari Wibowo</a></p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
